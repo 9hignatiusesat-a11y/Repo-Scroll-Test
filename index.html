@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PROJECT V — Demo Landing (v3)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">PROJECT V</div>
+    <nav><a href="#intro">Intro</a><a href="#city">City</a><a href="#char">Character</a><a href="#logo">Logo</a></nav>
+  </header>
+
+  <main>
+    <!-- Intro Scene -->
+    <section id="intro" class="scene">
+      <div class="scene-inner">
+        <h2 class="eyebrow">COMING SOON</h2>
+        <h1 class="headline">PROJECT V</h1>
+        <p class="sub">Interactive cinematic experience — scroll to play each scene.</p>
+      </div>
+      <div class="scene-bg" data-type="image" data-src="assets/logo.svg" aria-hidden="true"></div>
+    </section>
+
+    <!-- City Scene: video scrubbed by scroll -->
+    <section id="city" class="scene">
+      <div class="scene-inner">
+        <h2>City Scene</h2>
+        <p>Scroll to travel through the city.</p>
+      </div>
+      <div class="scene-bg" data-type="video" data-src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" data-poster="assets/city.svg" aria-hidden="true"></div>
+    </section>
+
+    <!-- Character Scene -->
+    <section id="char" class="scene">
+      <div class="scene-inner">
+        <h2>Character Scene</h2>
+        <p>Highlighting the main cast.</p>
+      </div>
+      <div class="scene-bg" data-type="video" data-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" data-poster="assets/character.svg" aria-hidden="true"></div>
+    </section>
+
+    <!-- Logo Reveal Scene -->
+    <section id="logo" class="scene">
+      <div class="scene-inner">
+        <h2>Final Reveal</h2>
+        <h1 class="headline">PROJECT V</h1>
+        <button id="preorder" class="btn">Preorder</button>
+      </div>
+      <div class="scene-bg" data-type="image" data-src="assets/logo.svg" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <footer>&copy; 2025 — Your Studio</footer>
+
+  <div id="overlay" class="overlay" aria-hidden="true"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
